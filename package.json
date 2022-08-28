@@ -1,0 +1,41 @@
+{
+  "name": "honkit-plugin-i18nsettings",
+  "description": "Language settings the website for a better reading experience",
+  "main": "index.js",
+  "version": "1.0.0",
+  "author": "NISHIDE, Masami",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/nishidemasami/honkit-plugin-i18nsettings",
+  "engines": {
+    "gitbook": ">=2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishidemasami/honkit-plugin-i18nsettings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nishidemasami/honkit-plugin-i18nsettings/issues"
+  },
+  "devDependencies": {
+    "eslint": "^2.7.0"
+  },
+  "gitbook": {
+    "properties": {
+      "language": {
+        "type": "string",
+        "default": "en",
+        "title": "Default language"
+      },
+      "languages": {
+        "type": "array",
+        "default": [
+          {
+              "config": "en",
+              "text": "English"
+          }
+        ],
+        "title": "Default languages list"
+      }
+    }
+  }
+}
